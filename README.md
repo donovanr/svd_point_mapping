@@ -12,3 +12,6 @@ The Euler angle conventions are (I believe) consistent with much of the physics 
 but are taken directly from
 [Eric Weisstein's  "Euler Angles" From MathWorld] (http://mathworld.wolfram.com/EulerAngles.html)
 
+it looks like there is some public domain code [here] (https://github.com/oleg-alexandrov/projects/blob/master/eigen/Kabsch.cpp)
+that uses the C++ eigen library to implement the same algorithm.
+Probably should use that, but worth checking against this code, since ithis is easy to read and understand.
