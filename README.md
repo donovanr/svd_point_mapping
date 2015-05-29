@@ -10,8 +10,13 @@ singular value decomposition (SVD) to solve the problem: [svd_rot.pdf] (http://i
 
 The Euler angle conventions are (I believe) consistent with much of the physics literature,
 but are taken directly from
-[Eric Weisstein's  "Euler Angles" From MathWorld] (http://mathworld.wolfram.com/EulerAngles.html)
+[Eric Weisstein's "Euler Angles" From MathWorld] (http://mathworld.wolfram.com/EulerAngles.html)
 
-It looks like there is some public domain code [here] (https://github.com/oleg-alexandrov/projects/blob/master/eigen/Kabsch.cpp)
-that uses the C++ eigen library to implement the same algorithm.
-Probably should use that, but worth checking against this code, since this is easy to read and understand.
+I also implemeted the algorithm in C++ using the Eigen library (http://eigen.tuxfamily.org/).
+
+The C++ code can be compiled using:
+```g++ -I ../eigen/ align_svd.cpp -o align_svd```
+but you may have to change the path to the Eigen libraries.
+
+The C++ and Julia implementations give the same results for the test case I used (up to floating point error), but the actual affine transforms the use are different.
+Not sure why this is the case.
