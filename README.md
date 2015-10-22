@@ -18,5 +18,5 @@ The C++ code can be compiled using:
 ```g++ -I ../eigen/ align_svd.cpp -o align_svd```
 but you may have to change the path to the Eigen libraries.
 
-The C++ and Julia implementations give the same results for the test case I used (up to floating point error), but the actual affine transforms the use are different.
+The C++ and Julia implementations give the same results for the test case I used (up to floating point error), but the actual affine transforms they use are different.
 Not sure why this is the case.
